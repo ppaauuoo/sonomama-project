@@ -1,15 +1,22 @@
 import { Link, Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import FAB from "./FAB";
+import Chatbot from "./Chatbot";
 
 const RootLayout = () => {
   return (
     <>
       <div className="drawer">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col ">
+        <div className="drawer-content">
           <Navbar />
-          <Outlet />
+          <Chatbot />
+          <div className="flex min-h-screen">
+            <Outlet />
+          </div>
+
+
           <Footer />
         </div>
         <div className="drawer-side">

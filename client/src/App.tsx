@@ -3,6 +3,7 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import RootLayout from './components/RootLayout';
 import Home from './pages/Home';
 import About from './pages/About';
+import Chatbot from './components/RootLayout/Chatbot';
 
 
 const router = createBrowserRouter([
