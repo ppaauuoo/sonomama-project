@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div
-      className="hero min-h-screen"
+      className="hero min-h-screen object-bottom"
       style={{
         backgroundImage: "url(/BG.jpg)",
       }}
@@ -14,7 +14,7 @@ export default function Home() {
           <h1 className="text-5xl">JAPAN EXPRESS</h1>
         </div>
         <div className="divider"></div>
-        <div className="flex gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <div className="stack">
             <Link to="/" className="btn btn-white rounded-full text-xl">
               <span className="relative flex h-3 w-3">

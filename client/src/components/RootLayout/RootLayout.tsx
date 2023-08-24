@@ -12,9 +12,7 @@ const RootLayout = () => {
         <div className="drawer-content">
           <Navbar />
           <Chatbot />
-          <div className="flex min-h-screen">
-            <Outlet />
-          </div>
+          <Outlet />
 
 
           <Footer />

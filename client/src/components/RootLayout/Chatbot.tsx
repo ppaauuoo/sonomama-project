@@ -79,7 +79,7 @@ const config = {
 export default function Chatbot()  {
 
   return (
-    <div className="fixed z-90 bottom-10 right-8">
+    <div className="fixed z-50 bottom-10 right-8">
       <ThemeProvider theme={theme}>
         <ChatBot {...config} steps={steps}  />
       </ThemeProvider>
