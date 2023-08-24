@@ -36,7 +36,7 @@ function Navbar() {
   // const { isAuthenticated } = useAuth0();
 
   return (
-    <div className="navbar bg-base-100 p-2 shadow-xl">
+    <div className="navbar fixed z-50 top-0 p-2 shadow-xl">
       <div className="flex-none md:hidden">
         <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
           <svg
@@ -56,10 +56,13 @@ function Navbar() {
       </div>
 
       <div className="navbar-start">
+        <div className="bg-white rounded-full h-40 w-80 mx-10 my-5 p-4 hidden md:inline-block">
         <img
-          className="object-contain h-40 mx-10 my-5 hidden md:inline-block"
+          className="object-contain   "
           src="/Banner.png"
         />
+        </div>
+
       </div>
       <div className="navbar-center">
         {/* <div className="dropdown dropdown-hover hidden sm:flex">
